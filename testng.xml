@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/nashtech/IdeaProjects/RestAssuredAutomation"><classes><class name="tests.TestMain">
+        <methods><include name="createUserTest"/>
+        <include name="getUserData"/>
+        <include name="updateUser"/>
+        <include name="patchUser"/>
+        <include name="deleteUser"/>
+        <include name="createInvalidUser"/>
+        <include name="deleteNonExistentUser"/>
+        <include name="invalidEndPoints"/>
+        <include name="invalidToken"/>
+    </methods></class>
+        <class name="tests.fileReader.ConfigFileReader"><methods>
+            <include name="testConfigFileReader"/>
+        </methods>
+        </class>
+    </classes>
+    </test>
+</suite>
