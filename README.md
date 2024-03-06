@@ -91,7 +91,8 @@ and
       <version>2.25.0</version>
   </dependency>
 ```
-- After run the test it will create a "allure-results" directory. 
+- After run the test it will create a "allure-results" directory.
+- I added allure-reports in the .gitignore 
 
 
 
