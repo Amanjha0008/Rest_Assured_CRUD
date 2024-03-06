@@ -56,7 +56,7 @@ private static final Logger logger = Logger.getLogger(TestMain.class.getName());
 ### Created 
 ### How to clone the repo 
 ```bash
-git clone https://github.com/Amanjha0008/Rest_Assured_01.git
+git clone https://github.com/Amanjha0008/Rest_Assured_CRUD.git
 ```
 
 ### How to run the Project?
