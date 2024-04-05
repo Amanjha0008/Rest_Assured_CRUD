@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Restassured-test-reports
-          path: RestAssured/target
+          path: Rest_Assured_CRUD/target
