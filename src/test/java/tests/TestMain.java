@@ -1,6 +1,7 @@
 package tests;
 
 
+
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -142,6 +143,7 @@ public class TestMain {
         // Print each user's details
         String responseBody = response.getBody().asString();
         logger.info("Response Body: " + responseBody);
+
 
         // Extract user details directly from JSON object
         JsonPath jsonPath = response.jsonPath();

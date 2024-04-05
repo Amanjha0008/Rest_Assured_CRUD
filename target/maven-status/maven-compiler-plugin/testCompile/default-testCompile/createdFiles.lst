@@ -1,0 +1,6 @@
+tests/helper/RequestBodyBuilder$Status.class
+tests/helper/RequestBodyBuilder$Gender.class
+tests/fileReader/ConfigFileReader.class
+tests/helper/EndPoints.class
+tests/TestMain.class
+tests/helper/RequestBodyBuilder.class
