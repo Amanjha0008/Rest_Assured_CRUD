@@ -1,0 +1,31 @@
+name: Demo_QA
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name : Installing Java Maven
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '21'
+          cache: 'maven' 
+
+      - name: Installing Chrome 
+        uses: browser-actions/setup-chrome@v1
+        
+      - run: chrome --version
+      - run: mvn clean test
+
+      - name: Upload test reports
+        if: always()  # Ensure reports are uploaded even if tests fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: Restassured-test-reports
+          path: target/surefire-reports
